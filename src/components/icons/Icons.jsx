@@ -1,0 +1,13 @@
+import "./AiIcon.jsx";
+import "./Css3Icon";
+import "./FigmaIcon";
+import "./HTML5Icon";
+import "./IdIcon";
+import "./JsIcon";
+import "./PrototypeIcon";
+import "./PsIcon";
+import "./ReactIcon";
+import "./SassIcon";
+import "./WireframeIcon";
+import "./WordpressIcon";
+import "./XdIcon";
