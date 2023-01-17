@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
-import "./components/About";
-import "./components/Projects";
-import "./components/Skills";
-import "./components/Contact";
+import "./components/HomePage";
+import "./components/AboutPage";
+import "./components/ProjectsPage";
+import "./components/SkillsPage";
+import "./components/ContactPage";
 import "./App.css";
 
 function App() {
@@ -11,6 +13,15 @@ function App() {
 
   return (
     <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Om meg" element={<AboutPage />} />
+          <Route path="/Projekter" element={<ProjectsPage />} />
+          <Route path="/Skills" element={<SkillsPage />} />
+          <Route path="/Kontakt" element={<ContactPage />} />
+        </Routes>
+      </Router>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
