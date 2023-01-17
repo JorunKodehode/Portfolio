@@ -13,17 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <HomePage>Home</HomePage>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/Om meg" element={<AboutPage />} />
-          <Route path="/Projekter" element={<ProjectsPage />} />
-          <Route path="/Skills" element={<SkillsPage />} />
-          <Route path="/Kontakt" element={<ContactPage />} />
-        </Routes>
-      </Router>
-
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
