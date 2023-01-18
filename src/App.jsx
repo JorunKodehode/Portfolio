@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import "./components/HomePage";
-import "./components/AboutPage";
-import "./components/ProjectsPage";
-import "./components/SkillsPage";
-import "./components/ContactPage";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HomePage } from "./components/HomePage.jsx";
+import { AboutPage } from "./components/AboutPage.jsx";
+import { ProjectsPage } from "./components/ProjectsPage.jsx";
+// import { SkillsPage } from "./components/SkillsPage.jsx";
+import { ContactPage } from "./components/ContactPage.jsx";
+import { Navbar } from "./components/Navbar.jsx";
 import "./App.css";
 
 function App() {
@@ -13,26 +13,18 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <Navbar className="col">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/AboutPage" element={<AboutPage />} />
+            <Route path="/ProjectsPage" element={<ProjectsPage />} />
+            {/* <Route path="/SkillsPage" element={<SkillsPage />} /> */}
+            <Route path="/ContactPage" element={<ContactPage />} />
+          </Routes>
+        </Navbar>
+      </Router>
+      <img src="./img/Head.png" alt="Avatar karakter av Jorun" />
     </div>
   );
 }

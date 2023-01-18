@@ -1,7 +1,5 @@
 import "../partials/Contact.style.css";
 
-function ContactPage() {
+export function ContactPage() {
   return <h2>Kontakt</h2>;
 }
-
-export default ContactPage;

@@ -1,6 +1,6 @@
 import "../partials/About.style.css";
 
-function AboutPage() {
+export function AboutPage() {
   return (
     <div className="col">
       <h2>Om meg</h2>
@@ -21,5 +21,3 @@ function AboutPage() {
     </div>
   );
 }
-
-export default AboutPage;

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../partials/Project.style.css";
 
-function ProjectsPage() {
+export function ProjectsPage() {
   return (
     <div>
       <h2>Prosjekter</h2>
@@ -9,5 +9,3 @@ function ProjectsPage() {
     </div>
   );
 }
-
-export default ProjectsPage;
