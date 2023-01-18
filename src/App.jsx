@@ -1,7 +1,7 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { AboutPage } from "./components/AboutPage.jsx";
 import { ProjectsPage } from "./components/ProjectsPage.jsx";
-import { SkillsPage } from "./components/SkillsPage.jsx";
+import { SkillPage } from "./components/SkillPage.jsx";
 import { ContactPage } from "./components/ContactPage.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import "./Global.css";
@@ -36,7 +36,7 @@ function App() {
             <Routes>
               <Route path="/AboutPage" element={<AboutPage />} />
               <Route path="/ProjectsPage" element={<ProjectsPage />} />
-              <Route path="/SkillsPage" element={<SkillsPage />} />
+              <Route path="/SkillPage" element={<SkillPage />} />
               <Route path="/ContactPage" element={<ContactPage />} />
             </Routes>
           </Navbar>
