@@ -4,6 +4,12 @@ export function AboutPage() {
   return (
     <div className="col">
       <h2>Om meg</h2>
+      <img
+        className="logo"
+        src="./img/Head-2.png"
+        alt="Avatar karakter av Jorun"
+      />
+
       <article>
         Hei der! Jeg er Jorun. Ei nysgjerrig sprudlende dame på 30 år. For tiden
         er jeg på kurs gjennom Podium for å fordype meg i JavaScript,{" "}

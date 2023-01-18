@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./components/Home.jsx";
 import { AboutPage } from "./components/AboutPage.jsx";
 import { ProjectsPage } from "./components/ProjectsPage.jsx";
 import { SkillPage } from "./components/SkillPage.jsx";
@@ -10,36 +11,15 @@ function App() {
   return (
     <div className="col">
       <div className="App">
-        <h2 className="onClickAvatar">KLIKK på MEG</h2>
-        <img
-          className="logo"
-          src="./img/Head.png"
-          alt="Avatar karakter av Jorun"
-        />
-        <img
-          className="logo"
-          src="./img/Head-1.png"
-          alt="Avatar karakter av Jorun"
-        />
-        <img
-          className="logo"
-          src="./img/Head-2.png"
-          alt="Avatar karakter av Jorun"
-        />
-        <img
-          className="logo"
-          src="./img/Head-3.png"
-          alt="Avatar karakter av Jorun"
-        />
         <Router>
-          <Navbar className="col">
-            <Routes>
-              <Route path="/AboutPage" element={<AboutPage />} />
-              <Route path="/ProjectsPage" element={<ProjectsPage />} />
-              <Route path="/SkillPage" element={<SkillPage />} />
-              <Route path="/ContactPage" element={<ContactPage />} />
-            </Routes>
-          </Navbar>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/AboutPage" element={<AboutPage />} />
+            <Route path="/ProjectsPage" element={<ProjectsPage />} />
+            <Route path="/SkillPage" element={<SkillPage />} />
+            <Route path="/ContactPage" element={<ContactPage />} />
+          </Routes>
+          <Navbar className="col" />
         </Router>
       </div>
     </div>
