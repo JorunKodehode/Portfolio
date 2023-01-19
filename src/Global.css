@@ -17,6 +17,10 @@
   filter: drop-shadow(0 0 2em #e73bb6);
 }
 
+p {
+  color: #000000;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
