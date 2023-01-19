@@ -1,14 +1,11 @@
 import "../partials/About.style.css";
+import logo from "../img/head.png";
 
 export function AboutPage() {
   return (
     <div className="col">
       <h2>Om meg</h2>
-      <img
-        className="logo"
-        src="./img/Head-2.png"
-        alt="Avatar karakter av Jorun"
-      />
+      <img src={logo} alt="Avatar karakter av Jorun" />
 
       <article>
         Hei der! Jeg er Jorun. Ei nysgjerrig sprudlende dame på 30 år. For tiden
