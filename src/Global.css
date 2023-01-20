@@ -5,6 +5,7 @@ html {
   background-color: #fbfbfb;
 }
 #root {
+  height: 100vh;
   background-color: #fbfbfb;
   max-width: 1280px;
   margin: 0 auto;
