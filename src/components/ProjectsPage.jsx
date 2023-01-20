@@ -6,8 +6,17 @@ export function ProjectsPage() {
   return (
     <div>
       <h2>Prosjekter</h2>
-      <img src={logo} alt="Avatar karakter av Jorun" />
-      <Link url={"https://jorunkodehode.github.io/increment/"} />
+      <tr>
+        <td>
+          <img src={logo} alt="Avatar karakter av Jorun" />
+        </td>
+        <td>
+          <div>
+            <Link url={"https://jorunkodehode.github.io/increment/"} />
+          </div>
+          <div className="card"></div>
+        </td>
+      </tr>
     </div>
   );
 }

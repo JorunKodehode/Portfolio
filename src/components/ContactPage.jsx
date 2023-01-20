@@ -2,9 +2,14 @@ import logo from "../img/head.png";
 
 export function ContactPage() {
   return (
-    <div>
+    <>
       <h2>Kontakt</h2>
-      <img src={logo} alt="Avatar karakter av Jorun" />
-    </div>
+      <tr>
+        <td>
+          <img src={logo} alt="Avatar karakter av Jorun" />
+        </td>
+        <td>Kontaktskjema</td>
+      </tr>
+    </>
   );
 }

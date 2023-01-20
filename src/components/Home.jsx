@@ -4,7 +4,10 @@ export function Home() {
   return (
     <div>
       <h2 className="onClickAvatar">KLIKK på MEG</h2>
-      <img src={logo} alt="Avatar karakter av Jorun" />
+      <td>
+        <img src={logo} alt="Avatar karakter av Jorun" />
+      </td>
+      <td></td>
     </div>
   );
 }

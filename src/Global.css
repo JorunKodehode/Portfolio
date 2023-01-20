@@ -1,5 +1,11 @@
+/*  primary: #fbfb86;
+    secundary: #e73bb6;
+*/
+html {
+  background-color: #fbfbfb;
+}
 #root {
-  background-color: #fbfb87;
+  background-color: #fbfbfb;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -8,6 +14,20 @@
 .onClickAvatar {
   color: #1572b6;
 }
+
+tr {
+  display: flex;
+  flex: wrap;
+  text-align: left;
+  background-color: #fbfb86;
+  padding: 2rem;
+}
+
+td {
+  width: 50%;
+  height: 100%;
+}
+
 .logo {
   height: 10em;
   padding: 1.5em;
@@ -15,6 +35,10 @@
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #e73bb6);
+}
+
+h2 {
+  color: #e73bb6;
 }
 
 p {
