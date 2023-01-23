@@ -5,13 +5,14 @@ export function SkillPage() {
   return (
     <div>
       <h2>Skills</h2>
-      <tr>
-        <td>
-          {" "}
-          <img src={logo} alt="Avatar karakter av Jorun" />
-        </td>
-        <td>{/* {icons} */}</td>
-      </tr>
+      <tbody>
+        <tr>
+          <td className="nav">
+            <img src={logo} alt="Avatar karakter av Jorun" />
+          </td>
+          <td>{/* {icons} */}</td>
+        </tr>
+      </tbody>
     </div>
   );
 }
